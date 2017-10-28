@@ -9,7 +9,7 @@ import '../style/materialize.css';
 import '../style/react-range.css';
 import '../style/style.css';
 
-console.log("hi");
+console.log("hi... you");
 
 const App = () => {
   const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));

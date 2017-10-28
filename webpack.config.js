@@ -43,6 +43,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "src/index.html"
+    }),
+    // used to define window scope variables
+    // React uses this to run in production mode
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
     })
   ]
 };
